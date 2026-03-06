@@ -26,8 +26,8 @@ export const NavigationBar = () =>{
         { /* Disappear on mobile view */}
         <div className="hidden md:flex items-center space-x-5">
           <a href="#works" onClick={(e) => scrollToSection(e, 'works')}>Works</a>
-          <a href="#experience" onClick={(e) => scrollToSection(e, 'experience')}>Experience</a>
-          <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a>
+          { /* <a href="#experience" onClick={(e) => scrollToSection(e, 'experience')}>Experience</a> */ }
+          { /* <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a>  */ }
         </div>
         <a href="https://www.linkedin.com/in/faustina-anne-francisco/" target="_blank" rel="noopener noreferrer">
           <img src="/linkedin-logo.svg" alt="LinkedIn Link" className="w-5 h-5 md:w-7 md:h-7 object-cover" />
