@@ -19,7 +19,7 @@
         "name": "Blank Space",
         "tag": ["Game Development", "Pixel Art"],
         "description": "Awarded 1st Place Advanced Team @ SUTD Mindsports Game Jam 2024. A space-themed point-and-click exploration game, where you play as a human researcher cataloguing certain species of interests across the universe, made using Godot.",
-        "tech": ["Godot", "Aseprite"],
+        "tech": ["Godot", "Aseprite", "Audacity"],
         "image": "/images/Blank_Space.png",
         "link": "https://github.com/FauxCrow/BlankSpace"
     },
@@ -33,7 +33,7 @@
     },
     {
         "name": "Lyf",
-        "tag": ["AR", "3D Modelling"],
+        "tag": ["AR/VR", "3D Modelling"],
         "description": "Made in partnership with Lyf One North Singapore. An AR camera application powered by Unity and Vuforia, which aims to increase engagement among residents by scanning specific colourful murals on the property and activating stickers, effects and virtual 3D models.",
         "tech": ["Unity", "Vuforia", "Adobe Photoshop"],
         "image": "/images/Lyf.png",
@@ -43,9 +43,17 @@
         "name": "Befriender's Circle",
         "tag": ["Software Engineering", "UI/UX", "3D Modelling"],
         "description": "A feedback-driven web-based platform designed to support caregivers of all ages through 3D simulation training modules, voice-enabled AI chatbot for caregiving resources, and a caregiver community support forum.",
-        "tech": ["React", "Tailwind CSS", "Express.js"],
+        "tech": ["React", "Tailwind CSS", "Express.js", "three.js"],
         "image": "/images/Befrienders_Circle.png",
         "link": "https://github.com/magentaong/BefriendersCircle"
+    },
+    {
+        "name": "iFlip",
+        "tag": ["Software Engineering", "Game Development", "AR/VR"],
+        "description": "An interactive book projection connected to a Mixed Reality (MR) Room, detecting human interactions and page markers using computer vision to recreate immersive games and scenes in Unity.",
+        "tech": ["Unity", "CV"],
+        "image": "/images/iFlip.png",
+        "link": "https://www.digitaldream.com.sg/"
     },
     {
         "name": "Whiskers",
@@ -54,5 +62,13 @@
         "tech": ["CV", "Raspberry Pi"],
         "image": "/images/Whiskers.png",
         "link": ""
+    },
+    {
+        "name": "Icarus",
+        "tag": ["Game Development", "Pixel Art"],
+        "description": "Showcased during SUTD Open House 2024 and 2025. A bullet-hell inspired action arcade game, based on the Greek myth of Icarus, made using Godot for the SUTD Dev & Dice Arcade Machine.",
+        "tech": ["Godot", "Aseprite", "Audacity"],
+        "image": "/images/Icarus.png",
+        "link": "https://fauxcrow.itch.io/icarus"
     }
 ]
