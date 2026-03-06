@@ -1,5 +1,6 @@
 [
     {
+        "id": "TaskTales",
         "name": "TaskTales",
         "tag": ["Software Engineering", "UI/UX", "Pixel Art"],
         "description": "Awarded a Honourable Mention for the SUTD Infomation Systems Singtel Award. A gamified productivity app designed to incentivize good habits in task management, through engaging gameplay and an intuitive interface.",
@@ -8,6 +9,7 @@
         "link": "https://github.com/aaj1510/tasktales"
     },
     {
+        "id": "ilumi-sync",
         "name": "Ilumi-sync",
         "tag": ["Software Engineering", "UI/UX", "Prototyping"],
         "description": "Awarded 3rd Place @ SBS Transit Hackathon 2025. A centralized MRT lighting system that detects light intensity along key entrances of the station, enabling real-time notifications for staff on which lights should be controlled from an intuitive dashboard.",
@@ -16,6 +18,7 @@
         "link": "https://github.com/FauxCrow/sbs-hackathon-2024"
     },
     {
+        "id": "Blank-Space",
         "name": "Blank Space",
         "tag": ["Game Development", "Pixel Art"],
         "description": "Awarded 1st Place Advanced Team @ SUTD Mindsports Game Jam 2024. A space-themed point-and-click exploration game, where you play as a human researcher cataloguing certain species of interests across the universe, made using Godot.",
@@ -24,6 +27,7 @@
         "link": "https://github.com/FauxCrow/BlankSpace"
     },
     {
+        "id": "LepakLah",
         "name": "LepakLah!",
         "tag": ["Software Engineering", "UI/UX"],
         "description": "Awarded 3rd Place @ Dell InnovateFest 2024. An AI-powered activity management system for Active Aging Centres, bridging the gap between elderly and caregivers through a personalised buddy system, inclusive activity balloting and weekly activity voting.",
@@ -32,6 +36,7 @@
         "link": "https://github.com/FauxCrow/dell-innovatefest-2024"
     },
     {
+        "id": "Lyf",
         "name": "Lyf",
         "tag": ["AR/VR", "3D Modelling"],
         "description": "Made in partnership with Lyf One North Singapore. An AR camera application powered by Unity and Vuforia, which aims to increase engagement among residents by scanning specific colourful murals on the property and activating stickers, effects and virtual 3D models.",
@@ -40,6 +45,16 @@
         "link": "https://github.com/FauxCrow/Lyf"
     },
     {
+        "id": "iFlip",
+        "name": "iFlip",
+        "tag": ["Software Engineering", "Game Development", "AR/VR"],
+        "description": "Made during an internship @ Digital Dream Singapore. An interactive book projection connected to a Mixed Reality (MR) Room, detecting human interactions and page markers using computer vision to recreate immersive games and scenes in Unity.",
+        "tech": ["Unity", "CV"],
+        "image": "/images/iFlip.png",
+        "link": "https://www.digitaldream.com.sg/"
+    },
+    {
+        "id": "Befrienders-Circle",
         "name": "Befriender's Circle",
         "tag": ["Software Engineering", "UI/UX", "3D Modelling"],
         "description": "A feedback-driven web-based platform designed to support caregivers of all ages through 3D simulation training modules, voice-enabled AI chatbot for caregiving resources, and a caregiver community support forum.",
@@ -48,14 +63,7 @@
         "link": "https://github.com/magentaong/BefriendersCircle"
     },
     {
-        "name": "iFlip",
-        "tag": ["Software Engineering", "Game Development", "AR/VR"],
-        "description": "An interactive book projection connected to a Mixed Reality (MR) Room, detecting human interactions and page markers using computer vision to recreate immersive games and scenes in Unity.",
-        "tech": ["Unity", "CV"],
-        "image": "/images/iFlip.png",
-        "link": "https://www.digitaldream.com.sg/"
-    },
-    {
+        "id": "Whiskers",
         "name": "Whiskers",
         "tag": ["Software Engineering", "Prototyping"],
         "description": "An interactive chat-robot designed to engage with commuters in Singapore University of Tech and Design, using motors to move towards recognised humans and chat with them.",
@@ -64,6 +72,7 @@
         "link": ""
     },
     {
+        "id": "Icarus",
         "name": "Icarus",
         "tag": ["Game Development", "Pixel Art"],
         "description": "Showcased during SUTD Open House 2024 and 2025. A bullet-hell inspired action arcade game, based on the Greek myth of Icarus, made using Godot for the SUTD Dev & Dice Arcade Machine.",

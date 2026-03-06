@@ -3,6 +3,7 @@ import { GradientBackground } from './components/GradientBackground.jsx';
 import { NavigationBar } from './components/NavigationBar.jsx';
 import { Home } from './pages/Home.jsx';
 import { Projects } from './pages/Projects.jsx';
+import { ProjectDetail } from './components/ProjectDetail.jsx';
 
 import data from './db/projects.json';
 
@@ -22,7 +23,8 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home roles={roles} projects={data} />} />
-        <Route path="/projects" element={<Projects projects={data} />} />
+        <Route path="/projects" element={<Projects roles={roles} projects={data} />} />
+        <Route path="/projects/:projectId" element={<ProjectDetail projects={data} />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </GradientBackground>

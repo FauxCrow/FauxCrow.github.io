@@ -1,11 +1,10 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 export const ProjectPreview = ({ project }) => {
-  const projectLink = project.name.toLowerCase().replace(/\s+/g, '-');
-
   return (
-    <div style={{ backgroundColor: "rgba(224, 186, 170, 0.28)" }} className="flex flex-col space-y-3 w-full h-full rounded-2xl border border-white/20 p-5 backdrop-blur-sm">
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ backgroundColor: "rgba(224, 186, 170, 0.28)" }} className="flex flex-col space-y-3 w-full h-full rounded-2xl border border-white/20 p-5 backdrop-blur-sm">
       { /* Image */ }
       <div className="aspect-video w-full overflow-hidden rounded-lg bg-black/20">
         <img src={project.image} alt={project.name} className="h-full w-full object-cover" />
@@ -38,11 +37,10 @@ export const ProjectPreview = ({ project }) => {
 
       { /* Footer 
       <div className="mt-auto pt-5">
-        <Link to={`/projects#${projectLink}`} className="block w-full text-center py-2 bg-(--colour-yellow) text-(--colour-purple) rounded-lg font-bold text-sm hover:brightness-110 transition-all">
-          Show More
+        <Link to={`/projects/${project.id}`} className="block w-full text-center py-2 bg-(--colour-yellow) text-(--colour-purple) rounded-lg font-bold font-body text-sm hover:brightness-110 transition-all">
+          See More
         </Link>
-      </div>
-      */ }
-    </div>
+      </div> */ }
+    </motion.div>
   );
 };
