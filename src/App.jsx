@@ -12,7 +12,7 @@ const roles = [
   { title: "UI/UX", top: "27%", left: "30%" },
   { title: "Software Engineering", top: "52%", left: "5%" },
   { title: "Game Development", top: "47%", left: "70%" },
-  { title: "AR", top: "67%", left: "55%" },
+  { title: "AR/VR", top: "67%", left: "55%" },
   { title: "Prototyping", top: "82%", left: "24%" },
 ];
 
