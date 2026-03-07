@@ -1,18 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export const NavigationBar = () =>{
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const scrollToSection = (e, id) => {
     e.preventDefault();
-    const scrollRoot = document.getElementById('scroll-root');
-    const targetElement = document.getElementById(id);
-    
-    if (scrollRoot && targetElement) {
-      const targetPosition = targetElement.offsetTop;
-      scrollRoot.scrollTo({
-        top: targetPosition - 100,
-        behavior: 'smooth'
-      });
+
+    if (location.pathname === '/') {
+      const targetElement = document.getElementById(id);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/', { state: { scrollTo: id } });
     }
   };
 

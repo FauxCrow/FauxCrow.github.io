@@ -39,7 +39,16 @@ export function Home({ roles, projects }) {
             const element = document.getElementById('works');
             if (element) {
                 setTimeout(() => {
-                    element.scrollIntoView({ behavior: 'instant' });
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    navigate(location.pathname, { replace: true, state: {} });
+                }, 100);
+            }
+        }
+        if (location.state?.scrollTo === 'contact') {
+            const element = document.getElementById('contact');
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth' });
                     navigate(location.pathname, { replace: true, state: {} });
                 }, 100);
             }
@@ -115,7 +124,7 @@ export function Home({ roles, projects }) {
             */}
 
             { /* Contact */}
-            <section id="contact" className="max-w-7xl mx-auto pt-10 px-4 pb-10">
+            <section id="contact" className="max-w-7xl mx-auto pt-10 px-4 pb-10 scroll-mt-24">
                 <h1 className="font-heading font-bold text-(--colour-yellow) text-xl md:text-3xl mb-5 lg:mb-10">Want To Chat?</h1>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch font-body">
@@ -131,10 +140,6 @@ export function Home({ roles, projects }) {
                     <ContactForm></ContactForm>
                 </div>
             </section>
-
-            <footer className="pt-10 text-center text-(--colour-yellow)/30">
-                © {new Date().getFullYear()} FauxCrow
-            </footer>
         </div>
     )
 }

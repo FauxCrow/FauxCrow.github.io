@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate  } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { GradientBackground } from './components/GradientBackground.jsx';
 import { NavigationBar } from './components/NavigationBar.jsx';
 import { Home } from './pages/Home.jsx';
@@ -27,6 +27,10 @@ function App() {
         <Route path="/projects/:projectId" element={<ProjectDetail projects={data} />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      
+      <footer className="pt-10 text-center text-(--colour-yellow)/30">
+        © {new Date().getFullYear()} FauxCrow
+      </footer>
     </GradientBackground>
   );
 }

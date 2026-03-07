@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 export const ProjectPreview = ({ project }) => {
   return (
@@ -31,16 +31,16 @@ export const ProjectPreview = ({ project }) => {
 
         {/* Description*/}
         <p className="font-body text-sm text-white/80 line-clamp-5 leading-relaxed">
-          {project.description}
+          {project.synopsis}
         </p>
       </div>
 
-      { /* Footer 
+      { /* Footer */ }
       <div className="mt-auto pt-5">
-        <Link to={`/projects/${project.id}`} className="block w-full text-center py-2 bg-(--colour-yellow) text-(--colour-purple) rounded-lg font-bold font-body text-sm hover:brightness-110 transition-all">
+        <Link to={`/projects/${project.id}`} state={{ from: location.pathname }} className="block w-full text-center py-2 bg-(--colour-yellow) text-(--colour-purple) rounded-lg font-bold font-body text-sm hover:brightness-110 transition-all">
           See More
         </Link>
-      </div> */ }
+      </div>
     </motion.div>
   );
 };
