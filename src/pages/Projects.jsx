@@ -81,7 +81,7 @@ export function Projects({ roles, projects }) {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filteredProjects.map((project, index) => (
                         <motion.div layout key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-                            <ProjectPreview project={project} />
+                            <ProjectPreview project={project} selectedTags={selectedTags}/>
                         </motion.div>
                     ))}
                 </div>

@@ -99,7 +99,7 @@ export function Home({ roles, projects }) {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filteredProjects.slice(0, 6).map((project, index) => (
                         <motion.div layout key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className={index >= 3 ? "hidden md:block" : "block"}>
-                            <ProjectPreview project={project} />
+                            <ProjectPreview project={project} selectedTags={selectedTags}/>
                         </motion.div>
                     ))}
                 </div>
