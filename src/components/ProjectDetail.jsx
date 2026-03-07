@@ -31,7 +31,7 @@ export function ProjectDetail({ projects }) {
   return (
     <div className="max-w-4xl mx-auto pt-20 px-4">
       { /* Return */}
-      <div className="flex-grow flex flex-col space-y-3">
+      <div id="return" className="flex-grow flex flex-col space-y-3">
         {/* Title */}
         <div className="flex flex-nowrap gap-2 justify-between">
           <div className="flex flex-row gap-2">
