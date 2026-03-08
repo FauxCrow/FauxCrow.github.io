@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { motion } from "framer-motion";
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { ChevronLeft, ExternalLink } from 'lucide-react';
+import { MediaCarousel } from './MediaCarousel';
 
 export function ProjectDetail({ projects }) {
   const navigate = useNavigate();
@@ -81,8 +82,10 @@ export function ProjectDetail({ projects }) {
           ))}
         </div>
 
-        {/* Media Carousel */}
-        <img src={project.image} className="w-full rounded-2xl mt-3" />
+        { /* Media Carousel */}
+        <MediaCarousel images={project.media}>
+          
+        </MediaCarousel>
 
         {/* Project Description */}
         <div className="flex flex-col space-y-3 mt-5">
@@ -105,8 +108,8 @@ export function ProjectDetail({ projects }) {
             {project.tech?.map((t, i) => (
               <motion.span
                 key={i}
-                whileHover={{ scale: 1.05 }} 
-                whileTap={{ scale: 0.95 }} 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 style={{ backgroundColor: "rgba(224, 186, 170, 0.28)" }}
                 className="px-3 md:px-5 py-1 md:py-2 border border-white/10 rounded-2xl text-xs md:text-md font-body tracking-wider text-white/60"
               >

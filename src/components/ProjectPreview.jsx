@@ -7,7 +7,7 @@ export const ProjectPreview = ({ project, selectedTags }) => {
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ backgroundColor: "rgba(224, 186, 170, 0.28)" }} className="flex flex-col space-y-3 w-full h-full rounded-2xl border border-white/20 p-5 backdrop-blur-sm">
       { /* Image */}
       <div className="aspect-video w-full overflow-hidden rounded-lg bg-black/20">
-        <img src={project.image} alt={project.name} className="h-full w-full object-cover" />
+        <img src={project.media[0].url} alt={project.name} className="h-full w-full object-cover" />
       </div>
 
       { /* Project Info */}
