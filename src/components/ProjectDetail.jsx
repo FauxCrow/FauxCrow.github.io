@@ -55,18 +55,19 @@ export function ProjectDetail({ projects }) {
 
           </div>
 
-
-          <motion.a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
-            whileTap={{ scale: 0.95 }}
-            className="flex-shrink-0 flex items-center gap-2 px-2 md:px-4 py-2 border border-white/10 rounded-full tracking-wider bg-white/5 text-white/60 font-body text-sm transition-colors hover:text-white hover:border-white/30 w-fit"
-          >
-            <span className="hidden md:inline">View Project</span>
-            <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
-          </motion.a>
+          {project.link != "" &&
+            <motion.a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
+              whileTap={{ scale: 0.95 }}
+              className="flex-shrink-0 flex items-center gap-2 px-2 md:px-4 py-2 border border-white/10 rounded-full tracking-wider bg-white/5 text-white/60 font-body text-sm transition-colors hover:text-white hover:border-white/30 w-fit"
+            >
+              <span className="hidden md:inline">View Project</span>
+              <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
+            </motion.a>
+          }
         </div>
 
 
@@ -84,7 +85,7 @@ export function ProjectDetail({ projects }) {
 
         { /* Media Carousel */}
         <MediaCarousel images={project.media}>
-          
+
         </MediaCarousel>
 
         {/* Project Description */}

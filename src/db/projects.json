@@ -229,11 +229,48 @@
                 "url": "62og9MAGX4E"
             },
             {
+                "type": "youtube",
+                "url": "wtjYP3QimbQ"
+            },
+            {
                 "type": "image",
                 "url": "/media/BefriendersCircle/HiFiPrototype.png"
             }
         ],
         "link": "https://github.com/magentaong/BefriendersCircle"
+    },
+    {
+        "id": "Simulated-Reality",
+        "name": "Simulated Reality",
+        "tag": [
+            "3D Modelling"
+        ],
+        "synopsis": "A perspective study of my university life through the medium of 3D Modelling, focusing on the focal point of daily life from estate to room to object, and the surreal feelings of living in repeated cycles of days like in a simulation.",
+        "description": "Simulated Reality is a glimpse into the real life of myself as a university student, where the whole world seems to boil down into a singular room down to a singular tool used for all my work. It is a nod towards the life of most college students, and represents the mundanity of college life, where the repetitive days start to feel like a simulation game with someone else controlling your moves.\n\nFrom an outsider's perspective, you can first observe the whole estate and its features, then notice the location marker above the HDB block indicating where my avatar resides. Next, you can catch a glimpse into the messy room where she rests with a tired plumbob above her head, a nod to the Sims games and a playful twist on the fatigue a college student usually experiences. Finally, you can look into the mechanics behind the object driving her moves, and the reason for her exhaustion, with an exploded view of each part that makes a mouse work.",
+        "process": "This project was created as part of the Spatial Design World module at SUTD, where we were given the freedom to choose what objects and scenes to model. I chose to create this elaborate story as I found myself struggling to manage the workload from my college modules, deciding to put my energy into expressing myself in a creative and relatable way. For this reason, I decided to steer towards a minimalistic and eerie feel, allowing for only one single point of colour across each of the three pieces, to show how dull life could feel in this state and using a little colour to direct the viewer's attention to the details I wished to highlight.\n\nFor the 3D models themselves, I chose to focus on the mouse, the biggest tool a programmer and gamer can use in daily life, as the focal point of my project. Zooming out, I then modelled the imperfect scene of my room, as a snapshot to what a real glimpse into my life would look like, especially in the middle of a term. Finally, I zoomed out to the entire estate, focusing on my block as the location marker where the room and object resided, and highlighting the LRT as my main mode of transport home everyday.\n\nThe entire process of modelling was done in Rhino 3D, where each scene or object was modelled by hand with reference to pictures of my room and estate. Then, the outlines were generated from the edges of all 3D models, and only necessary lines were kept in the clean-up process to obtain this minimal look and feel.",
+        "tech": [
+            "Rhino",
+            "Google Maps"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "url": "/media/SimulatedReality/HeroImage.png"
+            },
+            {
+                "type": "image",
+                "url": "/media/SimulatedReality/Estate.png"
+            },
+            {
+                "type": "image",
+                "url": "/media/SimulatedReality/Room.png"
+            },
+            {
+                "type": "image",
+                "url": "/media/SimulatedReality/Object.png"
+            }
+        ],
+        "link": ""
     },
     {
         "id": "Icarus",
