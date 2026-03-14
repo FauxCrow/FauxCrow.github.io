@@ -7,10 +7,14 @@ export function MediaCarousel({ images }) {
   const [curr, setCurr] = useState(0);
 
   // set image to previous or next on button press
-  const prev = () =>
+  const prev = (e) => {
+    e.stopPropagation();
     setCurr((curr) => (curr === 0 ? images.length - 1 : curr - 1));
-  const next = () =>
+  }
+  const next = (e) => {
+    e.stopPropagation();
     setCurr((curr) => (curr === images.length - 1 ? 0 : curr + 1));
+  }
 
   return (
     <div className="overflow-hidden relative">

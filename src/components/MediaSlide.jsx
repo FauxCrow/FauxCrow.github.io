@@ -18,19 +18,26 @@ export function MediaSlide({ item, isActive }) {
   };
 
   useEffect(() => {
-    if (!isActive && playerRef.current) {
+  if (!isActive && playerRef.current && typeof playerRef.current.pauseVideo === 'function') {
+    try {
       playerRef.current.pauseVideo();
-      playerRef.current.seekTo(0);
+    } catch (err) {
+      console.log("YouTube bridge interrupted safely");
     }
-  }, [isActive]);
+  }
+}, [isActive]);
 
   return (
     <div className="min-w-full flex justify-center items-center">
+      {!isActive && (
+        <div className="absolute inset-0 z-10 bg-transparent cursor-default" />
+      )}
+
       {isVideo ? (
         <div className="w-full aspect-video mt-3 rounded-2xl overflow-hidden shadow-lg">
-          <YouTube 
-            videoId={item.url} 
-            opts={opts} 
+          <YouTube
+            videoId={item.url}
+            opts={opts}
             onReady={onReady}
             className="w-full h-full"
             iframeClassName="w-full h-full"

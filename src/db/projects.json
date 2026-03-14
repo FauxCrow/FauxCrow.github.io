@@ -305,6 +305,26 @@
         "link": "https://fauxcrow.itch.io/icarus"
     },
     {
+        "id": "What-The-Hack-2025",
+        "name": "What The Hack 2025",
+        "tag": [
+            "UI/UX"
+        ],
+        "synopsis": "",
+        "description": "",
+        "process": "",
+        "tech": [
+            "Figma"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "url": "/media/WTH25/HeroImage.png"
+            }
+        ],
+        "link": ""
+    },
+    {
         "id": "Whiskers",
         "name": "Whiskers",
         "tag": [
