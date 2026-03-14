@@ -32,13 +32,13 @@ export function MediaCarousel({ images }) {
       { /* Overlay Left Right Buttons */}
       <div className="absolute inset-0 flex items-center justify-between p-4 pointer-events-none">
         <button
-          onClick={prev}
+          onPointerDown={prev}
           className="p-1 rounded-full shadow bg-white/50 text-gray-800 hover:bg-white pointer-events-auto"
         >
           <ChevronLeft className="w-4 h-4 md:w-10 md:h-10" />
         </button>
         <button
-          onClick={next}
+          onPointerDown={next}
           className="p-1 rounded-full shadow bg-white/50 text-gray-800 hover:bg-white pointer-events-auto"
         >
           <ChevronRight className="w-4 h-4 md:w-10 md:h-10" />
