@@ -1,0 +1,17 @@
+[
+    {
+        "dates": "Sep 2025 - Dec 2025",
+        "title": "SBS Transit - IT Intern",
+        "experience": "In a period of 4 months, I worked under the IT department at SBS Transit to develop and implement PDF export functions in .NET Core using Syncfusion for an internal ASP.NET application. I also liased with the HR Team to design and develop an internal E-Card Application using ASP.NET and React, with an SQL database, to streamline the process of sending and uploading event cards. Through this design process, I prototyped the UI/UX using Figma to communicate clearly with the client and make necessary changes based on feedback."
+    },
+    {
+        "dates": "Jun 2024 - Jan 2025",
+        "title": "STEAMunity - Design Mentor",
+        "experience": "As part of STEAMunity's programme to teach design thinking to tertiary students, I facilitated a team of secondary and polytechnic students for a period of 6 months to design and develop prototypes using design thinking principles. Through weekly sessions and liaising with Singapore Association of the Visually Handicapped (SAVH) to conduct user interviews, I helped guide my team towards their final tactile solution, a modular tile powered by 3D printing technology."
+    },
+    {
+        "dates": "Sep 2022 - Mar 2023",
+        "title": "Digital Dream - Game Designer & Developer",
+        "experience": "During my 6 month internship, I worked on creating multiple interactive games for a Mixed Reality (MR) room using Unity game engine and Adobe Photoshop for assets, including a Hansel-and-Gretel-inspired escape room and a Christmas-themed activity. For my main project, I developed iFlip, an interactive book projection connected to the MR Room using computer vision and Unity, inspired by the story of the Little Match Girl. Finally, I worked with APSN clients to develop immersive experiences that teach every-day social skills to people with mental disabilities."
+    }
+]

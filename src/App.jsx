@@ -5,7 +5,8 @@ import { Home } from './pages/Home.jsx';
 import { Projects } from './pages/Projects.jsx';
 import { ProjectDetail } from './components/ProjectDetail.jsx';
 
-import data from './db/projects.json';
+import projectData from './db/projects.json';
+import experienceData from './db/experience.json'
 
 const roles = [
   { title: "Pixel Art", top: "7%", left: "0%" },
@@ -22,9 +23,9 @@ function App() {
     <GradientBackground>
       <NavigationBar />
       <Routes>
-        <Route path="/" element={<Home roles={roles} projects={data} />} />
-        <Route path="/projects" element={<Projects roles={roles} projects={data} />} />
-        <Route path="/projects/:projectId" element={<ProjectDetail projects={data} />} />
+        <Route path="/" element={<Home roles={roles} projects={projectData} experience={experienceData} />} />
+        <Route path="/projects" element={<Projects roles={roles} projects={projectData} />} />
+        <Route path="/projects/:projectId" element={<ProjectDetail projects={projectData} />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       

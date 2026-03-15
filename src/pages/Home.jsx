@@ -6,8 +6,9 @@ import { ProjectPreview } from '../components/ProjectPreview.jsx'
 import { TagButton } from '../components/TagButton.jsx';
 import { DownArrow } from '../components/DownArrow.jsx';
 import { ContactForm } from '../components/EmailService.jsx';
+import { Timeline } from '../components/ExperienceTimeline.jsx';
 
-export function Home({ roles, projects }) {
+export function Home({ roles, projects, experience }) {
     const [selectedTags, setSelectedTags] = useState([]);
     const location = useLocation();
     const navigate = useNavigate();
@@ -99,7 +100,7 @@ export function Home({ roles, projects }) {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filteredProjects.slice(0, 6).map((project, index) => (
                         <motion.div layout key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className={index >= 3 ? "hidden md:block" : "block"}>
-                            <ProjectPreview project={project} selectedTags={selectedTags}/>
+                            <ProjectPreview project={project} selectedTags={selectedTags} />
                         </motion.div>
                     ))}
                 </div>
@@ -117,11 +118,13 @@ export function Home({ roles, projects }) {
                 </div>
             </section>
 
-            { /* Experience 
-            <section id="experience" className="max-w-7xl mx-auto pt-10">
+            { /* Experience */}
+            <section id="experience" className="max-w-7xl mx-auto pt-10 px-4 scroll-mt-24">
                 <h1 className="font-heading font-bold text-(--colour-yellow) text-xl md:text-3xl">Experience</h1>
+
+                { /* Interactive Timeline */}
+                <Timeline experience={experience}></Timeline>
             </section>
-            */}
 
             { /* Contact */}
             <section id="contact" className="max-w-7xl mx-auto pt-10 px-4 pb-10 scroll-mt-24">
