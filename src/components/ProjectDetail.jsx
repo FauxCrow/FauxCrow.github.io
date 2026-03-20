@@ -37,6 +37,9 @@ export function ProjectDetail({ projects }) {
         <title>{(project.name || project.title || "Project") + " | FauxCrow Portfolio"}</title>
         <meta name="description" content={project.description ? project.description.substring(0, 150) : "Portfolio project by FauxCrow"} />
 
+        { /* Canonical Tag */ }
+        <link rel="canonical" href={`https://fauxcrow.github.io/projects/${projectId}`} />
+
         {/* Open Graph tags */}
         <meta property="og:title" content={project.name || project.title || "Project Detail"} />
         <meta property="og:image" content={project.image || "/default-preview.jpg"} />

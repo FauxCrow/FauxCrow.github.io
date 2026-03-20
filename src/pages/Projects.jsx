@@ -43,49 +43,56 @@ export function Projects({ roles, projects }) {
         });
 
     return (
-        <div className="space-y-5">
-            <section id="projects" className="max-w-7xl mx-auto pt-10 px-4 scroll-mt-24">
-                <div className="flex items-center gap-x-2">
-                    <motion.div
-                        animate={{
-                            x: [0, -5, 0]
-                        }}
-                        transition={{
-                            duration: 1.5,
-                            repeat: Infinity,
-                            ease: "easeInOut",
-                        }}
-                        style={{ fontSize: "2rem", display: "inline-block", color: "var(--colour-yellow)" }}
-                        onClick={handleGoBack}
-                    >
-                        <ChevronLeft className="w-6 h-6 md:w-10 md:h-10" strokeWidth={1} />
-                    </motion.div>
-                    <h1 className="font-heading font-bold text-(--colour-yellow) text-xl md:text-3xl">All Projects</h1>
-                </div>
-
-                { /* Project Screen */}
-                <div className="flex flex-wrap gap-2 mb-8 mt-4">
-                    {sortedRoles.map((role, index) => (
-                        <TagButton
-                            key={index}
-                            tag={role.title}
-                            isActive={selectedTags.includes(role.title)}
-                            onTagClick={handleTagClick}
-                        />
-                    ))}
-                    {selectedTags.length > 0 && (
-                        <button onClick={() => setSelectedTags([])} className="text-xs text-(--colour-white)/50 hover:text-(--colour-white) transition-colors ml-2">clear tags</button>
-                    )}
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {filteredProjects.map((project, index) => (
-                        <motion.div layout key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-                            <ProjectPreview project={project} selectedTags={selectedTags}/>
+        <>
+            <Helmet>
+                <title>FauxCrow | Projects</title>
+                <link rel="canonical" href="https://fauxcrow.github.io/projects" />
+                <meta name="description" content="All projects of FauxCrow, specializing in Game Dev and UI/UX."  />
+            </Helmet>
+            <div className="space-y-5">
+                <section id="projects" className="max-w-7xl mx-auto pt-10 px-4 scroll-mt-24">
+                    <div className="flex items-center gap-x-2">
+                        <motion.div
+                            animate={{
+                                x: [0, -5, 0]
+                            }}
+                            transition={{
+                                duration: 1.5,
+                                repeat: Infinity,
+                                ease: "easeInOut",
+                            }}
+                            style={{ fontSize: "2rem", display: "inline-block", color: "var(--colour-yellow)" }}
+                            onClick={handleGoBack}
+                        >
+                            <ChevronLeft className="w-6 h-6 md:w-10 md:h-10" strokeWidth={1} />
                         </motion.div>
-                    ))}
-                </div>
-            </section>
-        </div>
+                        <h1 className="font-heading font-bold text-(--colour-yellow) text-xl md:text-3xl">All Projects</h1>
+                    </div>
+
+                    { /* Project Screen */}
+                    <div className="flex flex-wrap gap-2 mb-8 mt-4">
+                        {sortedRoles.map((role, index) => (
+                            <TagButton
+                                key={index}
+                                tag={role.title}
+                                isActive={selectedTags.includes(role.title)}
+                                onTagClick={handleTagClick}
+                            />
+                        ))}
+                        {selectedTags.length > 0 && (
+                            <button onClick={() => setSelectedTags([])} className="text-xs text-(--colour-white)/50 hover:text-(--colour-white) transition-colors ml-2">clear tags</button>
+                        )}
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {filteredProjects.map((project, index) => (
+                            <motion.div layout key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+                                <ProjectPreview project={project} selectedTags={selectedTags} />
+                            </motion.div>
+                        ))}
+                    </div>
+                </section>
+            </div>
+        </>
     )
 }
