@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { ChevronLeft, ExternalLink } from 'lucide-react';
 import { MediaCarousel } from './MediaCarousel';
+import { Helmet } from 'react-helmet-async';
 
 export function ProjectDetail({ projects }) {
   const navigate = useNavigate();
@@ -33,12 +34,12 @@ export function ProjectDetail({ projects }) {
     <>
       <Helmet>
         {/* Google Search Results */}
-        <title>{project.title} | FauxCrow Portfolio</title>
-        <meta name="description" content={project.description.substring(0, 150)} />
+        <title>{(project.name || project.title || "Project") + " | FauxCrow Portfolio"}</title>
+        <meta name="description" content={project.description ? project.description.substring(0, 150) : "Portfolio project by FauxCrow"} />
 
         {/* Open Graph tags */}
-        <meta property="og:title" content={project.title} />
-        <meta property="og:image" content={project.image} />
+        <meta property="og:title" content={project.name || project.title || "Project Detail"} />
+        <meta property="og:image" content={project.image || "/default-preview.jpg"} />
       </Helmet>
       <div className="max-w-4xl mx-auto pt-20 px-4">
         { /* Return */}
