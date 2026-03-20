@@ -45,6 +45,15 @@ export function Home({ roles, projects, experience }) {
                 }, 100);
             }
         }
+        if (location.state?.scrollTo === 'experience') {
+            const element = document.getElementById('experience');
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    navigate(location.pathname, { replace: true, state: {} });
+                }, 100);
+            }
+        }
         if (location.state?.scrollTo === 'contact') {
             const element = document.getElementById('contact');
             if (element) {
