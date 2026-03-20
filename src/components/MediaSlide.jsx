@@ -46,7 +46,7 @@ export function MediaSlide({ item, isActive }) {
       ) : (
         <img
           src={item.url}
-          alt="Slide"
+          alt="Media Slide for project"
           className="w-full rounded-2xl md:mt-3 object-cover aspect-video"
         />
       )}
