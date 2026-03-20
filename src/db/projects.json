@@ -208,6 +208,42 @@
         "link": "https://www.digitaldream.com.sg/"
     },
     {
+        "id": "Stack-Overflow",
+        "name": "Stack Overflow",
+        "dates": "Jan 25 to Apr 25",
+        "tag": [
+            "Software Engineering",
+            "Game Development"
+        ],
+        "synopsis": "A 1v1 competitive arcade stacker game powered by a FPGA board, where each player takes turns stopping a shifting light at the right moment to stack their blocks in a race to the top.",
+        "description": "Stack Overflow is a 1v1 competitive arcade stacker game powered by a FPGA board, where each player takes turns stopping a shifting light at the right moment to stack their blocks in a race to the top. Players must stack their towers perfectly or risk losing pieces as they go, striving to either reach a level further than their opponent to win or to reach the top in a draw.\n\nThis project was presented at the Term 3 Computer Science & Design Project Showcase.",
+        "process": "For this project, I first worked on developing the ALU operations in Lucid for the FPGA board, which served as the baseline operations we could execute to run a full game. I then worked on designing the required game mechanics for a functional 2-player stacker game, and the finite state machine logic using the ALU operations to run each mechanic loop. \n\nOnce we settled on the game mechanics and a finite state machine logic, I then implemented the logic in the FPGA Board, as well as connecting the game display in a 16x16 WS2812B Matrix for real-time player feedback. I also used LED light indicators to show player's turn and the winner of the game.\n\nFinally, I helped with the design of the arcade machine, using red and blue contrasting colours assigned to each player side for intuitive gameplay. The materials were chosen to be sustainable to facilitate easy setup and teardown, using recycled cardboard and paper tape.",
+        "tech": [
+            "Lucid",
+            "FPGA",
+            "Alchitry Labs"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "url": "/media/StackOverflow/HeroImage.png"
+            },
+            {
+                "type": "youtube",
+                "url": "Y5Wt4Uj5hP4"
+            },
+            {
+                "type": "image",
+                "url": "/media/StackOverflow/Prototype.png"
+            },
+            {
+                "type": "image",
+                "url": "/media/StackOverflow/FSM.png"
+            }
+        ],
+        "link": "https://github.com/FauxCrow/FPGA-Arcade-Game"
+    },
+    {
         "id": "Befrienders-Circle",
         "name": "Befriender's Circle",
         "dates": "May 25 to Aug 25",
