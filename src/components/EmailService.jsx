@@ -83,19 +83,19 @@ export function ContactForm() {
                     type="text"
                     name="from_name"
                     placeholder="Name"
-                    className="bg-white/10 border border-white/10 rounded-lg p-3 text-white outline-none focus:border-(--colour-yellow) transition-colors"
+                    className="bg-white/10 border border-white/10 rounded-lg p-3 text-white outline-none focus:border-(--colour-yellow) transition-colors text-sm md:text-md"
                 />
                 <input
                     type="email"
                     name="reply_to"
                     placeholder="Your Email"
-                    className="bg-white/10 border border-white/10 rounded-lg p-3 text-white outline-none focus:border-(--colour-yellow) transition-colors"
+                    className="bg-white/10 border border-white/10 rounded-lg p-3 text-white outline-none focus:border-(--colour-yellow) transition-colors text-sm md:text-md"
                 />
                 <textarea
                     name="message"
                     placeholder="Your Message"
                     rows="5"
-                    className="bg-white/10 border border-white/10 rounded-lg p-3 text-white outline-none focus:border-(--colour-yellow) transition-colors resize-none"
+                    className="bg-white/10 border border-white/10 rounded-lg p-3 text-white outline-none focus:border-(--colour-yellow) transition-colors resize-none text-sm md:text-md"
                 ></textarea>
 
                 <motion.button

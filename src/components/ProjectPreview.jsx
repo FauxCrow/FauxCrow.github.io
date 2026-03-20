@@ -13,9 +13,13 @@ export const ProjectPreview = ({ project, selectedTags }) => {
       { /* Project Info */}
       <div className="flex-grow flex flex-col space-y-3 overflow-hidden">
         {/* Project Title */}
-        <h3 className="font(--font-heading) font-bold text-(--colour-yellow) text-xl">
-          {project.name}
-        </h3>
+        <div className="flex flex-wrap gap-2 justify-between items-center">
+          <h3 className="font(--font-heading) font-bold text-(--colour-yellow) text-xl">
+            {project.name}
+          </h3>
+
+          <div className="hidden md:block text-xs font-body text-(--colour-yellow)">[ {project.dates} ]</div>
+        </div>
 
         {/* Project Tags */}
         <div className="flex flex-wrap gap-2">
@@ -25,7 +29,7 @@ export const ProjectPreview = ({ project, selectedTags }) => {
             return (
               <span
                 key={i}
-                className={`px-2 py-0.5 border rounded-full text-[10px] uppercase tracking-wider transition-all duration-300 ${isHighlighted ? "bg-(--colour-yellow) text-(--colour-purple) border-(--colour-yellow) font-bold shadow-lg" : "bg-white/5 text-white/60 border-white/10"}`}
+                className={`px-2 py-0.5 border rounded-full text-[8px] md:text-[10px] uppercase tracking-wider transition-all duration-300 ${isHighlighted ? "bg-(--colour-yellow) text-(--colour-purple) border-(--colour-yellow) font-bold shadow-lg" : "bg-white/5 text-white/60 border-white/10"}`}
               >
                 {t}
               </span>

@@ -2,6 +2,7 @@
     {
         "id": "TaskTales",
         "name": "TaskTales",
+        "dates": "Jan 25 to Apr 25",
         "tag": [
             "Software Engineering",
             "UI/UX",
@@ -36,6 +37,7 @@
     {
         "id": "ilumi-sync",
         "name": "Ilumi-sync",
+        "dates": "Dec 24 to Jan 25",
         "tag": [
             "Software Engineering",
             "UI/UX",
@@ -69,6 +71,7 @@
     {
         "id": "Blank-Space",
         "name": "Blank Space",
+        "dates": "Sep 24 to Oct 24",
         "tag": [
             "Game Development",
             "Pixel Art"
@@ -105,6 +108,7 @@
     {
         "id": "LepakLah",
         "name": "LepakLah!",
+        "dates": "Jun 24 to Sep 24",
         "tag": [
             "Software Engineering",
             "UI/UX",
@@ -144,6 +148,7 @@
     {
         "id": "Lyf",
         "name": "Lyf",
+        "dates": "May 22 to Jun 22",
         "tag": [
             "AR/VR",
             "3D Modelling"
@@ -175,6 +180,7 @@
     {
         "id": "iFlip",
         "name": "iFlip",
+        "dates": "Sep 22 to Mar 23",
         "tag": [
             "Software Engineering",
             "Game Development",
@@ -204,6 +210,7 @@
     {
         "id": "Befrienders-Circle",
         "name": "Befriender's Circle",
+        "dates": "May 25 to Aug 25",
         "tag": [
             "Software Engineering",
             "UI/UX",
@@ -242,6 +249,7 @@
     {
         "id": "Simulated-Reality",
         "name": "Simulated Reality",
+        "dates": "Oct 24 to Nov 24",
         "tag": [
             "3D Modelling"
         ],
@@ -275,6 +283,7 @@
     {
         "id": "Icarus",
         "name": "Icarus",
+        "dates": "Dec 23 to Mar 24",
         "tag": [
             "Game Development",
             "Pixel Art"
@@ -307,6 +316,7 @@
     {
         "id": "Whiskers",
         "name": "Whiskers",
+        "dates": "Jan 24 to Apr 24",
         "tag": [
             "Software Engineering",
             "Prototyping"

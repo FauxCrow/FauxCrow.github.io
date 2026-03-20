@@ -52,7 +52,6 @@ export function ProjectDetail({ projects }) {
               <ChevronLeft className="w-6 h-6 md:w-10 md:h-10" strokeWidth={1} />
             </motion.div>
             <h1 id="title" className="text-xl md:text-4xl font-bold font-heading text-(--colour-yellow) truncate">{project.name}</h1>
-
           </div>
 
           {project.link != "" &&
@@ -62,7 +61,7 @@ export function ProjectDetail({ projects }) {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
               whileTap={{ scale: 0.95 }}
-              className="flex-shrink-0 flex items-center gap-2 px-2 md:px-4 py-2 border border-white/10 rounded-full tracking-wider bg-white/5 text-white/60 font-body text-sm transition-colors hover:text-white hover:border-white/30 w-fit"
+              className="flex-shrink-0 flex items-center gap-2 px-2 md:px-4 py-0.5 md:py-1 border border-white/10 rounded-full tracking-wider bg-white/5 text-white/60 font-body text-sm transition-colors hover:text-white hover:border-white/30 w-fit"
             >
               <span className="hidden md:inline">View Project</span>
               <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
@@ -70,23 +69,23 @@ export function ProjectDetail({ projects }) {
           }
         </div>
 
-
         {/* Project Tags */}
-        <div className="flex flex-wrap gap-2">
-          {project.tag?.map((t, i) => (
-            <span
-              key={i}
-              className="px-2 py-0.5 border border-white/10 rounded-full text-[10px] uppercase tracking-wider bg-white/5 text-white/60"
-            >
-              {t}
-            </span>
-          ))}
+        <div className="flex flex-wrap gap-2 justify-between">
+          <div className="flex flex-wrap gap-2">
+            {project.tag?.map((t, i) => (
+              <span
+                key={i}
+                className="px-2 py-0.5 border border-white/10 rounded-full text-[8px] md:text-[10px] uppercase tracking-wider bg-white/5 text-white/60"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+          <div className="hidden md:block text-sm font-body text-(--colour-yellow)">[ {project.dates} ]</div>
         </div>
 
         { /* Media Carousel */}
-        <MediaCarousel images={project.media}>
-
-        </MediaCarousel>
+        <MediaCarousel images={project.media}></MediaCarousel>
 
         {/* Project Description */}
         <div className="flex flex-col space-y-3 mt-5">

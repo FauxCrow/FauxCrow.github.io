@@ -34,7 +34,7 @@ export function MediaSlide({ item, isActive }) {
       )}
 
       {isVideo ? (
-        <div className="w-full aspect-video mt-3 rounded-2xl overflow-hidden shadow-lg">
+        <div className="w-full aspect-video rounded-2xl md:mt-3 overflow-hidden shadow-lg">
           <YouTube
             videoId={item.url}
             opts={opts}
@@ -47,7 +47,7 @@ export function MediaSlide({ item, isActive }) {
         <img
           src={item.url}
           alt="Slide"
-          className="w-full rounded-2xl mt-3 object-cover aspect-video"
+          className="w-full rounded-2xl md:mt-3 object-cover aspect-video"
         />
       )}
     </div>
