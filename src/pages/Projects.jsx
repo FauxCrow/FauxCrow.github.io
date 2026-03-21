@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 import { ProjectPreview } from '../components/ProjectPreview.jsx'
 import { TagButton } from '../components/TagButton.jsx';
+import { Helmet } from 'react-helmet-async';
 
 export function Projects({ roles, projects }) {
     const navigate = useNavigate();

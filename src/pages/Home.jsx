@@ -7,6 +7,7 @@ import { TagButton } from '../components/TagButton.jsx';
 import { DownArrow } from '../components/DownArrow.jsx';
 import { ContactForm } from '../components/EmailService.jsx';
 import { Timeline } from '../components/ExperienceTimeline.jsx';
+import { Helmet } from 'react-helmet-async';
 
 export function Home({ roles, projects, experience }) {
     const [selectedTags, setSelectedTags] = useState([]);
