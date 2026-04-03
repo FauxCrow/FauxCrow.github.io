@@ -4,6 +4,8 @@ import { useLocation, Link } from 'react-router-dom';
 import { Heading2 } from 'lucide-react';
 
 export const ProjectPreview = ({ project, selectedTags }) => {
+  const location = useLocation();
+  
   return (
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ backgroundColor: "rgba(224, 186, 170, 0.28)" }} className="flex flex-col space-y-3 w-full h-full rounded-2xl border border-white/20 p-5 backdrop-blur-sm">
       { /* Image */}

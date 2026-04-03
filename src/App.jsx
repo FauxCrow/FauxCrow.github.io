@@ -9,12 +9,12 @@ import projectData from './db/projects.json';
 import experienceData from './db/experience.json'
 
 const roles = [
-  { title: "Pixel Art", top: "7%", left: "0%" },
+  { title: "Digital Art", top: "7%", left: "0%" },
   { title: "3D Modelling", top: "12%", left: "55%" },
   { title: "UI/UX", top: "27%", left: "30%" },
   { title: "Software Engineering", top: "52%", left: "5%" },
   { title: "Game Development", top: "47%", left: "70%" },
-  { title: "AR/VR", top: "67%", left: "55%" },
+  { title: "Mixed Reality", top: "67%", left: "55%" },
   { title: "Prototyping", top: "82%", left: "24%" },
 ];
 

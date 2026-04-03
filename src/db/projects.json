@@ -6,7 +6,7 @@
         "tag": [
             "Software Engineering",
             "UI/UX",
-            "Pixel Art"
+            "Prototyping"
         ],
         "synopsis": "Awarded a Honourable Mention for the SUTD Infomation Systems Singtel Award. A gamified productivity app designed to incentivize good habits in task management, through engaging gameplay and an intuitive interface.",
         "description": "TaskTales is a gamified productivity app designed to incentivize good habits in task management, through engaging gameplay and an intuitive interface. Users choose a class which best aligns to their personal goals, and can earn points by completing minor and major task quests, which are then used to defeat weekly bosses for cosmetic rewards.\n\nThe team was awarded a Honourable Mention for the SUTD Infomation Systems Singtel Award for their efforts.",
@@ -74,7 +74,7 @@
         "dates": "Sep 24 to Oct 24",
         "tag": [
             "Game Development",
-            "Pixel Art"
+            "Digital Art"
         ],
         "synopsis": "Awarded 1st Place Advanced Team @ SUTD Mindsports Game Jam 2024. A space-themed point-and-click exploration game, where you play as a human researcher cataloguing certain species of interests across the universe, made using Godot.",
         "description": "Blank Space is a space-themed point-and-click exploration game, where you play as a human researcher cataloguing certain species of interests across the universe. This was made during a one-week game jam for the theme 'Space', and creatively applies the theme in gameplay through the use of negative space, the 'space' key, the space art and story themes.\n\nThe team was awarded 1st Place Advanced Team at SUTD Mindsports Game Jam 2024 for their efforts.",
@@ -150,8 +150,9 @@
         "name": "Lyf",
         "dates": "May 22 to Jun 22",
         "tag": [
-            "AR/VR",
-            "3D Modelling"
+            "Mixed Reality",
+            "3D Modelling",
+            "Digital Art"
         ],
         "synopsis": "Made in partnership with Lyf One North Singapore. An AR camera application powered by Unity and Vuforia, which aims to increase engagement among residents by scanning specific colourful murals on the property and activating stickers, effects and virtual 3D models.",
         "description": "Lyf is an AR camera application powered by Unity and Vuforia, which aims to increase engagement among residents on the property by scanning specific colourful murals on the property and activating an camera menu consisting of stickers, effects and virtual 3D models. The focus of the app was to increase mobility through these spaces, sparking conversations and shared memories through unique and self-made background for each Image.\n\nThe application was made in partnership with Lyf One North Singapore, through a collaboration with Temasek Polytechnic. It was also showcased at multiple industry visits at Temasek Polytechnic.",
@@ -184,7 +185,7 @@
         "tag": [
             "Software Engineering",
             "Game Development",
-            "AR/VR"
+            "Mixed Reality"
         ],
         "synopsis": "Made during an internship @ Digital Dream Singapore. An interactive book projection connected to a Mixed Reality (MR) Room, detecting human interactions and page markers using computer vision to recreate immersive games and scenes in Unity.",
         "description": "iFlip is an interactive book projection connected to a Mixed Reality (MR) Room, detecting human interactions and page markers on the book using computer vision to affect immersive games and scenes in the MR Room. The goal of the project was to tell immersive stories, where players could be transported into story scenes and interact with the story themselves.\n\nThis project was made during an internship at Digital Dream Singapore, and is property of Digital Dream Singapore.",
@@ -283,6 +284,41 @@
         "link": "https://github.com/magentaong/BefriendersCircle"
     },
     {
+        "id": "What-The-Hack-2025",
+        "name": "What The Hack 2025",
+        "dates": "Oct 24 to Nov 24",
+        "tag": [
+            "UI/UX",
+            "Digital Art"
+        ],
+        "synopsis": "A Hi-Fi Prototype created for the website development of What the Hack 2025 using Figma, made to disseminate vital information to all participants for the event.",
+        "description": "What the Hack 2025 comes from the annual 2-day hackathon organised by students from Singapore University of Technology and Design, which exposed teams to creating useful real-world products catered to the themes of aging population, clean water and sleep. These prototypes served as the base UI/UX design that was eventually made into a participant-facing website to disseminate vital information throughout the event.",
+        "process": "As part of my design process for UI/UX development, I first began with a mood board detailing the design team's colour palette and the concept for combining the different themes into an art piece. With the event themes being aging population, clean water and sleep, I envisioned a dreamy future cityscape, where the waters were clean and the streets were safe for everyone, which fit well with the given palette. Once I had this final concept, I created a lo-fi prototype that arranged the necessary information in an intuitive manner, blocking out spaces for each section and ensuring that information was easily and clearly accessible for the participants. \n\nI then worked on filling in the gaps in the background with original digital art pieces that could sell the concept of a dreamy cityscape, subtly incorporating the event themes and sponsors into this digital world in a way that did not detract from the story. In this way, a participant scrolling would be sold on the themes of this year's event, and hopefully be inspired to create unique products that could solve real-world problems.",
+        "tech": [
+            "Figma",
+            "Krita"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "url": "/media/WhatTheHack/HeroImage.png"
+            },
+            {
+                "type": "image",
+                "url": "/media/WhatTheHack/MoodBoard.png"
+            },
+            {
+                "type": "image",
+                "url": "/media/WhatTheHack/LoFiPrototype.png"
+            },
+            {
+                "type": "image",
+                "url": "/media/WhatTheHack/HiFiPrototype.png"
+            }
+        ],
+        "link": ""
+    },
+    {
         "id": "Simulated-Reality",
         "name": "Simulated Reality",
         "dates": "Oct 24 to Nov 24",
@@ -322,7 +358,7 @@
         "dates": "Dec 23 to Mar 24",
         "tag": [
             "Game Development",
-            "Pixel Art"
+            "Digital Art"
         ],
         "synopsis": "Showcased during SUTD Open House 2024 and 2025. A bullet-hell inspired action arcade game, based on the Greek myth of Icarus, made using Godot for the SUTD Dev & Dice Arcade Machine.",
         "description": "Icarus is a bullet-hell inspired action arcade game, based on the Greek myth of Icarus, made using Godot for the SUTD Dev & Dice Arcade Machine. The goal of the game is to survive for as long as you can, avoiding the wrath of Zeus, or the birds who share your path, while keeping your wings away from the waters or the clouds.\n\nThis game was showcased during SUTD Open House 2024 and 2025, and can be played on Itch.io.",
